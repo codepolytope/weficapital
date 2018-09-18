@@ -11,39 +11,66 @@
   <link rel="stylesheet" href="css/style.css">
 
     <script type="text/javascript">
-        const left = document.querySelector(".left");
-        const right = document.querySelector(".right");
-        const container = document.querySelector(".container");
 
-        left.addEventListener("mouseenter", () => {
-          container.classList.add("hover-left");
-        });
+        window.onload=function(){
+            const left = document.querySelector(".left");
+            const right = document.querySelector(".right");
+            const container = document.querySelector(".container");
 
-        left.addEventListener("mouseleave", () => {
-          container.classList.remove("hover-left");
-        });
+            left.addEventListener("mouseenter", () => {
+              container.classList.add("hover-left");
+            });
 
-        right.addEventListener("mouseenter", () => {
-          container.classList.add("hover-right");
-        });
+            left.addEventListener("mouseleave", () => {
+              container.classList.remove("hover-left");
+            });
+        }
+    </script>
 
-        right.addEventListener("mouseleave", () => {
-          container.classList.remove("hover-right");
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+
+    <script>
+    // Get the current year for the copyright
+        $('#year').text(new Date().getFullYear());
+
+    // Init Scrollspy
+        $('body').scrollspy({ target: '#main-nav' });
+
+    // Smooth Scrolling
+        $("#main-nav a").on('click', function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+
+            const hash = this.hash;
+
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function () {
+
+              window.location.hash = hash;
+            });
+          }
         });
     </script>
+
 
   <title>Wefi Capital</title>
 </head>
 
-<body id="home" data-spy="scroll" data-target="#main-nav">
-  <nav class="navbar navbar-expand-md navbar-light fixed-top py-4" id="main-nav">
+<body id="home" data-spy="scroll" data-target="#main-nav" class="">
+  <nav class="navbar navbar-expand-md navbar-light container" id="main-nav">
       <a href="#home" class="navbar-brand">
-        <img src="img/mlogo.png" width="50" height="50" alt="">
-        <h3 class="d-inline align-middle">Wefi</h3>
+        <img src="img/wefilogo.jpg" width="40%" alt="wefi logo">
       </a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
-    <div class="container">
+    <div class="">
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
@@ -60,7 +87,7 @@
             <a href="#about" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="#contact" class="nav-link btn btn-primary">Contact Us</a>
+            <a href="#contact" class="nav-link btn btn-primary text-white">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -73,21 +100,21 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 text-center">
-            <h1 class="mt-5 pt-5 pb-3">
+            <h1 class="mt-5 pb-5">
              Wefi for Partners
             </h1>
             <p class="lead">Partner with us</p>
-            <a href="#" class="btn btn-outline-secondary btn-lg">
+            <a href="#" class="btn btn-outline-secondary btn-lg left">
               <i class="fas fa-arrow-right"></i> Learn More
             </a>
           </div>
 
           <div class="col-lg-6 text-center">
-            <h1 class="mt-5 pt-5 pb-3">
+            <h1 class="mt-5 pb-5">
               Wefi for Merchants
             </h1>
             <p class="lead">Get funding for your business</p>
-            <a href="#" class="btn btn-outline-secondary btn-lg">
+            <a href="#" class="btn btn-outline-secondary btn-lg right">
               <i class="fas fa-arrow-right"></i> Learn More
             </a>
           </div>
@@ -500,7 +527,7 @@
   <section id="contact" class="bg-light p-5" style="background-image: linear-gradient(to bottom, #003884, #001c55);">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6" style="margin-left: 25%;">
           <h3 class="text-white">Let’s get started</h3>
           <p class="lead text-white">Tell us about you and our business development team will reach out to you!</p>
           <form>
@@ -519,7 +546,25 @@
                   <i class="fas fa-envelope"></i>
                 </span>
               </div>
+              <input type="text" class="form-control" placeholder="Company Name">
+            </div>
+
+            <div class="input-group input-group-lg mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
               <input type="text" class="form-control" placeholder="Email">
+            </div>
+
+            <div class="input-group input-group-lg mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="Phone">
             </div>
 
             <div class="input-group input-group-lg mb-3">
@@ -531,12 +576,8 @@
               <textarea class="form-control" placeholder="Message" rows="5"></textarea>
             </div>
 
-            <input type="submit" value="Apply Now" class="btn btn-primary btn-block btn-lg">
+            <input type="submit" value="Apply Now" class="btn btn-primary btn-lg" style="margin-left: 50%;">
           </form>
-        </div>
-
-        <div class="col-lg-3 align-self-center">
-          <img src="img/mlogo.png" alt="" class="img-fluid">
         </div>
       </div>
     </div>
@@ -546,6 +587,9 @@
   <footer id="main-footer" class="py-3 text-white" style="background-color: #001031;">
     <div class="container">
       <div class="row text-center">
+        <div class="col-lg-3 align-self-center">
+          <img src="img/wefilogo.jpg" alt="" class="img-fluid">
+        </div>
         <div class="col-md-6 ml-auto">
           <p class="lead">
             Copyright &copy;
@@ -556,37 +600,5 @@
     </div>
   </footer>
 
-
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
-
-  <script>
-    // Get the current year for the copyright
-    $('#year').text(new Date().getFullYear());
-
-    // Init Scrollspy
-    $('body').scrollspy({ target: '#main-nav' });
-
-    // Smooth Scrolling
-    $("#main-nav a").on('click', function (event) {
-      if (this.hash !== "") {
-        event.preventDefault();
-
-        const hash = this.hash;
-
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function () {
-
-          window.location.hash = hash;
-        });
-      }
-    });
-  </script>
 </body>
-
 </html>
