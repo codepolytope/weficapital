@@ -1,0 +1,50 @@
+#main-nav {
+  border-bottom: 1px solid lightblue;
+  padding-right: 5rem; }
+
+#home .wefilogo {
+  width: 25%; }
+
+#showcase {
+  padding: 1rem; }
+
+#wefipartners {
+  padding-top: 10rem;
+  padding-bottom: 2rem; }
+  #wefipartners .wefipic1 {
+    width: 100%; }
+
+#wefimerchants {
+  padding-top: 10rem;
+  padding-bottom: 2rem; }
+  #wefimerchants .wefipic2 {
+    width: 100%; }
+
+.wefipic3 {
+  width: 100%; }
+
+.wefipic4 {
+  width: 100%; }
+
+.wefipic5 {
+  width: 40%; }
+
+.wefipic6 {
+  width: 40%; }
+
+.wefipic7 {
+  width: 40%; }
+
+.wefipic8 {
+  width: 100%; }
+
+.navbar-brand {
+  width: 75%; }
+
+.partner-text {
+  margin-left: 37%;
+  padding-right: 20rem;
+  padding-bottom: 5rem; }
+
+.btn {
+  border-radius: 5%; }
