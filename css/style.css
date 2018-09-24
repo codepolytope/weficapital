@@ -1,21 +1,20 @@
 #main-nav {
-  border-bottom: 1px solid lightblue;
-  padding-right: 5rem; }
+  padding-right: 3rem; }
 
 #home .wefilogo {
-  width: 25%; }
+  width: 45%; }
 
 #showcase {
-  padding: 1rem; }
+  padding: 0rem; }
 
 #wefipartners {
-  padding-top: 10rem;
+  padding-top: 5rem;
   padding-bottom: 2rem; }
   #wefipartners .wefipic1 {
     width: 100%; }
 
 #wefimerchants {
-  padding-top: 10rem;
+  padding-top: 5rem;
   padding-bottom: 2rem; }
   #wefimerchants .wefipic2 {
     width: 100%; }
@@ -45,10 +44,8 @@
 .navbar-brand {
   width: 75%; }
 
-.partner-text {
-  margin-left: 37%;
-  padding-right: 20rem;
-  padding-bottom: 5rem; }
+.navbar {
+  padding: 0; }
 
 .wefiprocess1 {
   margin-bottom: -15rem;
@@ -91,32 +88,38 @@
 
   .wefiprocess4 {
     margin-bottom: 1rem;
-    padding: 0rem; } }
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-  /* Styles */ }
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-  /* Styles */ }
+    padding: 0rem; }
+
+  .partner-text {
+    margin-right: 1rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem; }
+
+  #main-nav {
+    padding: 1rem; } }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Styles */ }
+  .partner-text {
+    margin-left: 0;
+    margin-top: 5rem; } }
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   /* Styles */ }
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* Styles */ }
-/**********
-iPad 3
-**********/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  /* Styles */ }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  /* Styles */ }
+  #main-nav {
+    margin: -2rem; } }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
-  /* Styles */ }
+  #main-nav {
+    margin: -2rem; }
+
+  .partner-text {
+    margin-left: 37%;
+    padding-right: 20rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem; } }
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
-  /* Styles */ }
+  #main-nav {
+    margin: -2rem; } }
