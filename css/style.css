@@ -1,5 +1,6 @@
 #main-nav {
-  padding-right: 3rem; }
+  padding-right: 3rem;
+  margin-top: -4rem; }
 
 #home .wefilogo {
   width: 45%; }
@@ -21,7 +22,7 @@
 
 #contact {
   background-image: linear-gradient(to bottom, #003884, #001c55);
-  padding: 1rem; }
+  padding: 10rem; }
 
 .wefipic3 {
   width: 100%; }
@@ -71,6 +72,9 @@
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #main-nav {
+    margin-top: -2rem; }
+
   .wefipic9 {
     width: 60%; }
 
@@ -99,20 +103,20 @@
     padding: 1rem; } }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #main-nav {
+    margin-top: -2rem; }
+
   .partner-text {
     margin-left: 0;
     margin-top: 5rem; } }
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* Styles */ }
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   #main-nav {
-    margin: -2rem; } }
+    margin-top: -2rem; } }
 /* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 1020px) {
   #main-nav {
-    margin: -2rem; }
+    margin-top: -4rem; }
 
   .partner-text {
     margin-left: 37%;
@@ -122,4 +126,4 @@
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
   #main-nav {
-    margin: -2rem; } }
+    margin: -4rem; } }
