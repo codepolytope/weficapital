@@ -116,7 +116,7 @@
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1020px) {
   #main-nav {
-    margin-top: -6rem; }
+    margin-top: -10rem; }
 
   .partner-text {
     margin-left: 37%;
@@ -126,4 +126,4 @@
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
   #main-nav {
-    margin: -6rem; } }
+    margin: -10rem; } }
