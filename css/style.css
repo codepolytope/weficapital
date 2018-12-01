@@ -1,21 +1,19 @@
 #main-nav {
   padding-right: 3rem;
-  margin-top: -4rem; }
+}
 
 #home .wefilogo {
-  width: 45%; }
+  width: 70%; }
 
 #showcase {
   padding: 0rem; }
 
 #wefipartners {
-  padding-top: 5rem;
   padding-bottom: 2rem; }
   #wefipartners .wefipic1 {
     width: 100%; }
 
 #wefimerchants {
-  padding-top: 5rem;
   padding-bottom: 2rem; }
   #wefimerchants .wefipic2 {
     width: 100%; }
@@ -43,7 +41,7 @@
   width: 100%; }
 
 .navbar-brand {
-  width: 75%; }
+  width: 30%; }
 
 .navbar {
   padding: 0; }
@@ -74,6 +72,9 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   #main-nav {
     margin-top: -2rem; }
+
+    #home .wefilogo {
+      width: 130%; }
 
   .wefipic9 {
     width: 60%; }
@@ -116,7 +117,9 @@
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1020px) {
   #main-nav {
-    margin-top: -10rem; }
+    margin-top: -1rem;
+    top: -2rem;
+  }
 
   .partner-text {
     margin-left: 37%;
