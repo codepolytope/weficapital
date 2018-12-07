@@ -12,15 +12,18 @@
   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
   crossorigin="anonymous"></script>
 
-    <!-- Css stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- Css stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
   <title>Wefi Capital</title>
 </head>
 
 <body id="home" data-spy="scroll" data-target="#main-nav" class="">
   <nav class="navbar navbar-expand-md navbar-light" id="main-nav">
       <a href="#home" class="navbar-brand">
-        <img src="img/wefilogo1.png" class="wefilogo" alt="wefi logo">
+        <img src="img/wefilogo111.jpg" class="wefilogo" alt="wefi logo">
       </a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
@@ -55,7 +58,7 @@
         <div class="row">
           <div class="col-lg-6 text-center" id="wefipartners">
             <img src="img/wefipic1.svg" class="wefipic1" alt="wefi partners">
-            <h3 class="mt-5 pb-5">
+            <h3 class="mt-5 pb-2">
              Wefi for Partners
             </h3>
             <p>Partner with us</p>
@@ -66,11 +69,11 @@
 
           <div class="col-lg-6 text-center" id="wefimerchants">
             <img src="img/wefipic2.svg" class="wefipic2" alt="wefi merchants">
-            <h3 class="mt-5 pb-5">
+            <h3 class="mt-5 pb-2">
               Wefi for Merchants
             </h3>
             <p>Get funding for your business</p>
-            <a href="#" class="btn btn-primary right">
+            <a href="#" class="btn btn-primary btn-lg right">
               <i class="fas fa-arrow-right"></i> Learn More
             </a>
           </div>
@@ -216,7 +219,7 @@
             <h2 class="p-3">
               Get Funding for your business
             </h2>
-            <div class="row">
+            <div class="row" id="fundingrow">
                 <div class="col-xs-12 wefiprocess1">
                   <div class="text-center mb-resp"> 
                     <div class="wefiiquiry">
@@ -231,7 +234,7 @@
                     <div class="wefiapplication">
                       <img src="img/wefipic10.png" class="wefipic9" alt="wefi">
                       <h5>APPLICATION</h5>
-                      <p>A short application will need to be filled out and submitted to us along with the last 3-4 months of bank statements in order for us to process your request.</p>
+                      <p class="text-muted">A short application will need to be filled out and submitted to us along with the last 3-4 months of bank statements in order for us to process your request.</p>
                     </div>
                   </div>
                 </div>
@@ -248,8 +251,8 @@
                   <div class="text-center">
                     <div class="wefiapproval">
                       <img src="img/wefipic12.png" class="wefipic9" alt="wefi">
-                      <h3>APPROVAL</h3>
-                      <p>After everything is approved a quick merchant interview takes place, and funds can be wired the same day!</p>
+                      <h5>APPROVAL</h5>
+                      <p class="text-muted">After everything is approved a quick merchant interview takes place, and funds can be wired the same day!</p>
                     </div>
                   </div>
                 </div>
@@ -328,6 +331,7 @@
       <div class="row">
         <div class="col">
           <div class="info-header mb-5">
+              <i class="fas fa-ship"></i>
             <h2 class="p-3">
               Industries We Serve
             </h2>
@@ -469,7 +473,7 @@
         <div class="col-12 text-center">
           <h3 class="text-white">Let’s get started</h3>
           <p class="text-white">Tell us about you and our business development team will reach out to you!</p>
-          <form>
+          <form id="contactform">
             <div class="input-group input-group-lg mb-3">
               <input type="text" class="form-control" placeholder="Name">
             </div>
@@ -491,22 +495,30 @@
     margin-top: 2rem">    
             </div>
           </form>
+          <p style="color:white;">
+              CONNECT WITH US
+          </p>
+          <p style="color:white;">
+            Info@WeFi.Capital
+            203.816.9854 x 101
+            4 Davenport Ave, 
+            Greenwich, CT, 06830
+          </p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer id="main-footer" class="py-3 text-white" style="background-color: #001031;">
+  <footer id="main-footer" class="py-5 text-white" style="background-color: #001031;">
     <div class="container">
       <div class="row text-center">
-        <div class="col-lg-3 align-self-center">
+        <div class="col-sm-3">
           <img src="img/wefilogofooter.png" alt="" class="img-fluid">
         </div>
-        <div class="col-md-6 ml-auto">
-          <p class="lead">
-            Copyright &copy;
-            <span id="year"></span>
+        <div class="col-sm-6 ml-auto">
+          <p class="copyrighttext">
+            Copyright &copy;<span id="year"></span> WeFi Capital. All Rights Reserved.
           </p>
         </div>
       </div>
