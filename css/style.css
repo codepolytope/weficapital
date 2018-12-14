@@ -144,6 +144,9 @@
  }
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
+  body{
+    font-size: 1rem;
+  }
   #main-nav {
     padding: 4rem; 
   }
